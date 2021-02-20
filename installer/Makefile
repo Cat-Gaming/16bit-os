@@ -4,6 +4,7 @@ AS=nasm
 all: compile link iso
 
 iso:
+	mkdir iso
 	cp os_installer.bin iso
 	truncate iso/os_installer.bin -s 1200k
 	mkisofs -b os_installer.bin -o os_installer.iso iso

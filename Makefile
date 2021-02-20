@@ -5,6 +5,7 @@ AS=nasm
 all: compile link iso
 
 iso:
+	mkdir iso
 	cp os.bin iso
 	truncate iso/os.bin -s 1200k
 	mkisofs -b os.bin -o os_live.iso iso
