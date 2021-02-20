@@ -1,0 +1,6 @@
+iso/*
+installer/iso/*
+*.bin
+*.iso
+installer/*.bin
+installer/*.iso
